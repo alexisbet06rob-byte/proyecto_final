@@ -1,0 +1,9 @@
+{
+  "deviceId": "pump-01",
+  "runId": "run-normal-01",
+  "ts": "2026-10-24T18:30:00.000Z",
+  "lecturas": { "corriente_A": 0.81, "vibracion_g": 0.12, "temperatura_C": 32.1 },
+  "unidades": { "corriente_A": "A", "vibracion_g": "g", "temperatura_C": "°C" },
+  "etiqueta": "normal",
+  "falla": "ninguna"
+}
