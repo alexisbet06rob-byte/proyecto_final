@@ -10,5 +10,8 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "mqtt": "^5.16.1"
+  }
 }
