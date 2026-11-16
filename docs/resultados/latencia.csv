@@ -1,0 +1,13 @@
+metodo,falla,corridas,detectadas,latencia_media_muestras
+umbrales,sobrecarga,5,5,2
+umbrales,obstruccion,5,0,
+umbrales,cavitacion,5,0,
+umbrales,deriva_termica,5,0,
+mad,sobrecarga,5,5,2
+mad,obstruccion,5,4,23.5
+mad,cavitacion,5,5,2
+mad,deriva_termica,5,2,30.5
+ewma,sobrecarga,5,5,2
+ewma,obstruccion,5,5,15.6
+ewma,cavitacion,5,5,2.2
+ewma,deriva_termica,5,5,18.8

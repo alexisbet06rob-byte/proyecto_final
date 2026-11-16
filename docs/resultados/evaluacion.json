@@ -1,0 +1,151 @@
+{
+  "N": 400,
+  "INICIO": 200,
+  "observaciones": 10000,
+  "configuracion": "umbrales(p3)|mad(w60,k3,p3)|ewma(l0.3,L3.5,p3)",
+  "parametros": {
+    "umbrales": {
+      "limites": {
+        "corriente_A": [
+          0.5,
+          1.2
+        ],
+        "vibracion_g": [
+          0,
+          0.3
+        ],
+        "temperatura_C": [
+          20,
+          40
+        ]
+      },
+      "persistencia": 3
+    },
+    "mad": {
+      "ventana": 60,
+      "minMuestras": 30,
+      "k": 3,
+      "persistencia": 3,
+      "pisoMad": {
+        "corriente_A": 0.01,
+        "vibracion_g": 0.005,
+        "temperatura_C": 0.1
+      }
+    },
+    "ewma": {
+      "lambda": 0.3,
+      "L": 3.5,
+      "persistencia": 3
+    }
+  },
+  "resultados": [
+    {
+      "nombre": "umbrales",
+      "nObs": 10000,
+      "TP": 871,
+      "FP": 0,
+      "TN": 6000,
+      "FN": 3129,
+      "precision": 1,
+      "recall": 0.218,
+      "f1": 0.358,
+      "normales": 5,
+      "normalesConFalsaAlarma": 0,
+      "porFalla": {
+        "sobrecarga": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 2
+        },
+        "obstruccion": {
+          "corridas": 5,
+          "detectadas": 0,
+          "latenciaMedia": null
+        },
+        "cavitacion": {
+          "corridas": 5,
+          "detectadas": 0,
+          "latenciaMedia": null
+        },
+        "deriva_termica": {
+          "corridas": 5,
+          "detectadas": 0,
+          "latenciaMedia": null
+        }
+      },
+      "latenciaMedia": 2
+    },
+    {
+      "nombre": "mad",
+      "nObs": 10000,
+      "TP": 2456,
+      "FP": 0,
+      "TN": 6000,
+      "FN": 1544,
+      "precision": 1,
+      "recall": 0.614,
+      "f1": 0.761,
+      "normales": 5,
+      "normalesConFalsaAlarma": 0,
+      "porFalla": {
+        "sobrecarga": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 2
+        },
+        "obstruccion": {
+          "corridas": 5,
+          "detectadas": 4,
+          "latenciaMedia": 23.5
+        },
+        "cavitacion": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 2
+        },
+        "deriva_termica": {
+          "corridas": 5,
+          "detectadas": 2,
+          "latenciaMedia": 30.5
+        }
+      },
+      "latenciaMedia": 10.9
+    },
+    {
+      "nombre": "ewma",
+      "nObs": 10000,
+      "TP": 3804,
+      "FP": 0,
+      "TN": 6000,
+      "FN": 196,
+      "precision": 1,
+      "recall": 0.951,
+      "f1": 0.975,
+      "normales": 5,
+      "normalesConFalsaAlarma": 0,
+      "porFalla": {
+        "sobrecarga": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 2
+        },
+        "obstruccion": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 15.6
+        },
+        "cavitacion": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 2.2
+        },
+        "deriva_termica": {
+          "corridas": 5,
+          "detectadas": 5,
+          "latenciaMedia": 18.8
+        }
+      },
+      "latenciaMedia": 9.7
+    }
+  ]
+}

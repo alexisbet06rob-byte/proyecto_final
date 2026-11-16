@@ -1,0 +1,4 @@
+metodo,TP,FP,TN,FN,precision,recall,F1,corridas_normales_con_falsa_alarma,corridas_normales,latencia_media_muestras
+umbrales,871,0,6000,3129,1,0.218,0.358,0,5,2
+mad,2456,0,6000,1544,1,0.614,0.761,0,5,10.9
+ewma,3804,0,6000,196,1,0.951,0.975,0,5,9.7
