@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --env-file=../.env src/server.js"
+    "start": "node --env-file=../.env src/server.js",
+    "tune": "node scripts/tune.js",
+    "evaluate": "node scripts/evaluate.js"
   },
   "keywords": [],
   "author": "",

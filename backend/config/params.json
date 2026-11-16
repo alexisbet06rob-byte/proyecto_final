@@ -1,0 +1,25 @@
+{
+  "mad": {
+    "k": 3,
+    "persistencia": 3
+  },
+  "ewma": {
+    "lambda": 0.3,
+    "L": 3.5,
+    "persistencia": 3
+  },
+  "_validacion": {
+    "criterio": "0 corridas normales con falsa alarma > mayor F1 > menor latencia",
+    "observaciones": 8800,
+    "mad": {
+      "f1": 0.801,
+      "recall": 0.667,
+      "latenciaMedia": 11.1
+    },
+    "ewma": {
+      "f1": 0.975,
+      "recall": 0.952,
+      "latenciaMedia": 9.6
+    }
+  }
+}
