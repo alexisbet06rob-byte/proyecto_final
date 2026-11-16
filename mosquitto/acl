@@ -1,0 +1,9 @@
+# Mínimo privilegio: el backend solo LEE telemetría; los dispositivos solo ESCRIBEN.
+user backend
+topic read motor/#
+
+user simulador
+topic write motor/#
+
+user esp32
+topic write motor/#
